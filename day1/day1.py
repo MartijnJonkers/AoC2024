@@ -12,7 +12,7 @@ rotated = list(zip(*input))
 sorted = [sorted(column) for column in rotated]
 part1 = sum([abs(sorted[0][i] - sorted[1][i]) for i in range(0, len(sorted[0]))])
 
-#part 2 : count each nr of occurances in second row for each value in first row
+# part 2 : count each nr of occurances in second row for each value in first row
 part2 = sum([(x * rotated[1].count(x)) for x in rotated[0]])
 
 # print result
